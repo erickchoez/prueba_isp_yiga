@@ -1,0 +1,41 @@
+
+# Ejemplos de requests para la API
+
+### 1. Crear cliente
+POST http://localhost:8000/api/clientes/
+Content-Type: application/json
+
+{
+  "identificacion": "0903369387",
+  "razon_social": "Cliente Prueba S.A.",
+  "email": "prueba@ejemplo.com",
+  "celular": "0987654321"
+}
+
+### 2. Listar clientes
+GET http://localhost:8000/api/clientes/
+
+### 3. Crear línea de servicio
+POST http://localhost:8000/api/lineas/
+Content-Type: application/json
+
+{
+  "cliente": 1,
+  "linea_numero": 1,
+  "estado": "ACTIVO"
+}
+
+### 4. Crear rubro
+POST http://localhost:8000/api/rubros/
+Content-Type: application/json
+
+{
+  "linea_servicio": 1,
+  "valor_total": 50.00,
+  "estado": "NO_PAGADO",
+  "fecha_emision": "2026-05-01T00:00:00Z",
+  "fecha_vencimiento": "2026-06-01T00:00:00Z"
+}
+
+### 5. Ver logs
+GET http://localhost:8000/api/logs/
