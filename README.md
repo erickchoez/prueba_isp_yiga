@@ -65,4 +65,4 @@ Se ejecuta cada 5 minutos y:
 ## Notas importantes
 
 - Por defecto usa SQLite (solo para pruebas locales)
-- Si quieres usar PostgreSQL, modifica DATABASES en backend/settings.py
+- Se puede usar PostgreSQL, modifica DATABASES en backend/settings.py
